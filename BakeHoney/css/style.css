@@ -1,0 +1,364 @@
+:root {
+    --primary-pink: #e72372;   
+}
+
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 4rem 12rem;
+    width: min-content;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.text-bl {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 62rem;
+    justify-content: center;
+    padding-bottom: 0.2rem;
+}
+
+.head-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    text-align: right;
+}
+
+.dropbtn-head {
+    background-color: var(--primary-pink);
+    color: white;
+    padding: none;
+    padding: 0.2rem;
+    font-size: 0.75rem;
+    border: none;
+}
+  
+.dropdown-head {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content-head {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 3rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 0.75rem;
+}
+  
+.dropdown-content-head a {
+    color: black;
+    padding: 0.3rem 0.7rem;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content-head a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown-head:hover .dropdown-content-head {
+    display: block;
+}
+  
+.dropdown-head:hover .dropbtn-head {
+    background-color: #6a1472;
+}
+
+.dropbtn {
+    background-color: #fff;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+}
+  
+.drop-categories {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 9rem;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.drop-categories:hover .dropdown-content {
+    display: block;
+}
+
+.nav-bar a:hover {
+    background-color: var(--primary-pink);
+    color: #fff;
+}
+
+.bar {
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    outline: none;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px #ddd;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 2fr 2.8fr;
+    grid-gap: 23rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.nav-bar a{
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.nav-bar-left {
+    display: grid;
+    grid-template-columns: 1.3fr repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.nav-bar-right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1.5fr; 
+    grid-gap: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 1rem;
+}
+
+
+.showcase p, h1{
+    width: 85%;
+}
+
+.showcase h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.logo-search {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    text-align: left;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: none;
+    text-align: left;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.logo-bar {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10rem;
+    text-align: left;
+    justify-content: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.cart {
+    padding-top: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 4px;
+    text-align: left;
+    justify-content: center;
+}
+
+.greet {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: 0.5rem;
+    text-align: right;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.greet p {
+    padding-top: 0.7rem;
+}
+
+.search-blog {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+ .search-txt {
+    width: 100%;
+    border: 3px solid #fff;
+    border-right: none;
+    padding: 1rem;
+    padding-right: none;
+    height: 45px;
+    border-radius: 10px 0 0 10px ;
+    outline: none;
+    color: #9DBFAF;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px #ddd;
+    font-weight: 600;
+}
+
+.search-ico {
+    width: 25px;
+    height: 45px;
+    border: 1px solid #fff;
+    padding: 0.3rem 0.3rem 0.1rem 0.1rem;
+    border-left: none;
+    background: #fff;
+    text-align: left;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px #ddd;
+}
+
+.search-main-txt {
+    width: 100%;
+    border: 3px solid #fff;
+    border-right: none;
+    padding: 1rem;
+    padding-right: none;
+    height: 45px;
+    outline: none;
+    color: #9DBFAF;
+    box-shadow: 0.6px 0.6px 0.6px 0.6px #eeefff;
+    font-weight: 600;
+}
+
+.search-main-ico {
+    width: 25px;
+    height: 45px;
+    border: 1px solid #fff;
+    padding: 0.3rem 0.3rem 0.1rem 0.1rem;
+    border-left: none;
+    background: #fff;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0.6px 0.6px 0.6px 0.6px #eeefff;
+}
+
+.body1 .showcase {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    grid-gap: 3rem;
+    margin: none;
+    padding: none;
+    justify-content: center;
+}
+
+.blogs > li{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 1rem;
+    text-align: left;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.showcase-2 li {
+    margin-top: 1.4rem;
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--primary-pink);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+
+.body2 {
+    margin-top: 3rem;
+}
+
+.body2 h1 {
+    margin-bottom: 1.5rem;
+}
+
+.body2 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin: none;
+    padding: none;
+    justify-content: center;
+}
+
+.container img {
+    height: 15rem;
+}
+
+.container div {
+    padding-bottom: 2rem;
+    box-shadow: 1.2px 1.2px 1.2px 1.2px #ddd;
+}
